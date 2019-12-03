@@ -13,12 +13,35 @@
   border-bottom: rgb(0, 70, 280) solid;
  border-width: 50px;
 }
+/* CSS ANIMATION */
+.avatar{
+    border-radius: 40%;
+    border-left: 5px solid rgb(0, 153, 255);
+    border-right: 5px solid rgb(0, 153, 255);
+    animation: rot 60s;
+    }
+@keyframes rot {
+ from{transform: translateX(-1000px)rotate(0deg);}
+ to  {transform: translateX(0px)rotate(9999999999999999999999999deg);}
+}
+.call{
+background-color: blue;
+color: white;
+padding: 20px;
+animation: pulse 0.55s 5;
+animation-delay: 1s;}
+
+@keyframes pulse {
+ from{background-color: blue;}
+ to  {background-color: blueviolet;}
+
+}
  </style>
   </head>
  <body>
   <main id="content" >
    <div class="col=left"><h2>EW</h2>
-  <img size="150px"src="imges/avataaars.png" alt="EEEEEEEE">
+  <img class="avatar" src="imges/avataaars.png" alt="EEEEEEEE">
    <h3>a</h3>
     </div>
     <div class="col-right" ><h2>ME pROJECTOS</h2>
@@ -28,6 +51,9 @@
 </li>
     <li><a href="Smile"></a></li>
     </ul>
+    <p>
+        <a class="call" href="tel:+37369551953"> cl m: NOW</a>
+    </p>
     </div>
     </main>
 </html>
